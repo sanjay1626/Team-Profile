@@ -1,8 +1,6 @@
-# Team Profile
+# Title
+Team Profile Generator
 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor)
-  
-  Check out the badges hosted by [shields.io](https://shields.io/).
 
 ## Description 
 This project was designed as a homework assignment for UCSD Extension Web Development bootcamp.
@@ -29,7 +27,6 @@ The application itself can be invoked with `node app.js`.
 
 
 # Usage
-
 
 The user initializes the application in the command line with node app.js. The user is prompted to choose what type of employee they would like to create first. The options are engineer, intern, and manager.
 
