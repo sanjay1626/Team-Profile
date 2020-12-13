@@ -28,8 +28,16 @@ function initApp() {
 
 function addteam(name,id,email) {
     inquirer.prompt([{
+        type: "input",
         message: "Enter team member name",
-        name: "name"
+        name: "name",
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid name is required.");
+            }
+            return true;
+
+        }
     },
     {
         type: "list",
@@ -39,13 +47,22 @@ function addteam(name,id,email) {
         
     },
     {
+       
         message: "Enter team member id",
         name: "id",
-        validate: answer => isNaN(parseInt(answer)) ? 'Not a number!, please re-enter a valid Id' : true
+        validate: answer => isNaN(parseInt(answer)) ? 'Not a number!, please re-enter a valid Id' : true,      
+        
     },
     {
         message: "Enter team member email",
-        name: "email"
+        name: "email",
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid email is required.");
+            }
+            return true;
+
+        }
     }
     ]).then(choicer => {
           name = choicer.name;
@@ -67,6 +84,7 @@ function addteam(name,id,email) {
             type: "input",
             name: "managerOfficeNumber",
             message: "Manager Office Number",
+            default: "___-___-____",
             validate: answer => isNaN(parseInt(answer)) ? 'Not a valid office number!, please re-enter a office number' : true
         }]).then(answer => {
             const manager = new Manager(name, id, email, answer.managerOfficeNumber);
@@ -83,7 +101,14 @@ function addteam(name,id,email) {
 
             type: "input",
             name: "github",
-            message: "Engineer Github"
+            message: "Engineer Github",
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("A valid Github account is required.");
+                }
+                return true;
+    
+            }
         }
         ]).then(answer => {
             const engineer = new Engineer(name, id, email, answer.github);
