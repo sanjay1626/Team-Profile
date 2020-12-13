@@ -33,7 +33,7 @@ The application itself can be invoked with `node app.js`.
 
 The user initializes the application in the command line with node app.js. The user is prompted to choose what type of employee they would like to create first. The options are engineer, intern, and manager.
 
-![Screenshotdisplay](./assets/display1.jpg)
+![Screenshotdisplay](./display1.jpg)
 
 The engineer option requires the user to input the name, ID, email, and github username.
 
@@ -47,11 +47,11 @@ If they choose "Yes", the employee type question appears and they go through the
 
 If they choose "No", the html page is generated with all the employees created.
 
-![Screenshotdisplay](./assets/display2.jpg)
+![Screenshotdisplay](./display2.jpg)
 
 Below is the HTML Team Profile display
 
-![Screenshotdisplay](./assets/display3.jpg)
+![Screenshotdisplay](./display3.jpg)
 
 
 
