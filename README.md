@@ -16,7 +16,7 @@ Upon launching the app, the user is asked to describe the first member of their 
 # Getting Started
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link.
    * [GitHub Respository](https://github.com/sanjay1626/Team-Profile.git) 
-   * [Deployed GitHub IO](https://sanjay1626.github.io/Team-Profile/)
+  
 
 # Installation
 To install this application, you will need a text editor. I recommend Visual Studio Code.
@@ -29,7 +29,7 @@ The application itself can be invoked with `node app.js`.
 
 
 # Usage
-* [Video demo of Team Profile-generator]()
+
 
 The user initializes the application in the command line with node app.js. The user is prompted to choose what type of employee they would like to create first. The options are engineer, intern, and manager.
 
