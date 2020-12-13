@@ -119,7 +119,8 @@ function addteam(name,id,email) {
     function createIntern() {
         inquirer.prompt([{
             type: "input",
-            name: "school"
+            name: "school",
+            message:"What School do you attend to?"
         }]).then(answer => {
             const intern = new Intern(name, id,email, answer.school)
             employees.push(intern);
